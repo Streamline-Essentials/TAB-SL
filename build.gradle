@@ -15,9 +15,9 @@ repositories {
 }
 
 dependencies {
-    // The Base
-    compileOnly 'com.github.server-utilities:TheBase:master-SNAPSHOT'
-    annotationProcessor 'com.github.server-utilities:TheBase:master-SNAPSHOT'
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
 
     // LuckPerms
     compileOnly 'net.luckperms:api:5.4'

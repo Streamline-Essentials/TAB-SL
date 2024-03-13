@@ -5,7 +5,7 @@ import host.plas.ratapi.TABExpansion;
 import lombok.Getter;
 import lombok.Setter;
 import net.streamline.api.modules.SimpleModule;
-import net.streamline.thebase.lib.pf4j.PluginWrapper;
+import org.pf4j.PluginWrapper;
 
 import java.util.List;
 

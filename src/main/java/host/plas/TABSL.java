@@ -4,7 +4,7 @@ import host.plas.managers.TABManager;
 import host.plas.ratapi.TABExpansion;
 import lombok.Getter;
 import lombok.Setter;
-import net.streamline.api.modules.SimpleModule;
+import singularity.modules.SimpleModule;
 import org.pf4j.PluginWrapper;
 
 import java.util.List;

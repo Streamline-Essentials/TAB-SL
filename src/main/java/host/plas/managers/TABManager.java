@@ -5,8 +5,8 @@ import me.neznamy.tab.api.TabAPI;
 import me.neznamy.tab.api.TabPlayer;
 import me.neznamy.tab.api.event.EventBus;
 import me.neznamy.tab.api.event.player.PlayerLoadEvent;
-import net.streamline.api.modules.ModuleUtils;
-import net.streamline.api.placeholders.RATRegistry;
+import singularity.modules.ModuleUtils;
+import singularity.placeholders.RATRegistry;
 
 public class TABManager {
     public static TabAPI getApi() {

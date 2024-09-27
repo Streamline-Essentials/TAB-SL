@@ -1,6 +1,6 @@
 package host.plas.ratapi;
 
-import net.streamline.api.placeholders.expansions.RATExpansion;
+import singularity.placeholders.expansions.RATExpansion;
 
 public class TABExpansion extends RATExpansion {
     public TABExpansion() {

@@ -1,5 +1,6 @@
 package host.plas;
 
+import host.plas.configs.TabConfig;
 import host.plas.managers.TABManager;
 import host.plas.ratapi.TABExpansion;
 import lombok.Getter;
@@ -11,10 +12,13 @@ import java.util.List;
 
 public class TABSL extends SimpleModule {
     @Getter @Setter
-    private static TABSL instance; // This will be used to access the module instance from anywhere in the plugin.
+    private static TABSL instance;
 
     @Getter @Setter
-    private static TABExpansion tabExpansion; // This will be used to access the expansion instance from anywhere in the plugin.
+    private static TABExpansion tabExpansion;
+
+    @Getter @Setter
+    private static TabConfig tabConfig;
 
     public TABSL(PluginWrapper wrapper) {
         super(wrapper);
@@ -28,10 +32,12 @@ public class TABSL extends SimpleModule {
 
     @Override
     public void onEnable() {
-        instance = this; // Set the instance to this module upon enabling.
+        instance = this;
 
-        tabExpansion = new TABExpansion(); // Initialize the expansion.
+        tabConfig = new TabConfig();
 
-        TABManager.init(); // Initialize the TABManager.
+        tabExpansion = new TABExpansion();
+
+        TABManager.init();
     }
 }

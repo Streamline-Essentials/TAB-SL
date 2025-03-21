@@ -1,6 +1,7 @@
 package host.plas.managers;
 
 import host.plas.TABSL;
+import host.plas.configs.TabConfig;
 import me.neznamy.tab.api.TabAPI;
 import me.neznamy.tab.api.TabPlayer;
 import me.neznamy.tab.api.event.EventBus;
@@ -30,6 +31,15 @@ public class TABManager {
             } catch (Exception e) {
                 TABSL.getInstance().logWarning("Could not register placeholder " + identifier + " due to: " + e.getMessage());
             }
+        });
+
+        final String luckpermsMeta = "%luckperms_meta_{this}%";
+        TABSL.getTabConfig().getLuckPermsMetaKeys().forEach(metaKey -> {
+            String fin = luckpermsMeta.replace("{this}", metaKey);
+
+            getApi().getPlaceholderManager().registerPlayerPlaceholder(fin, 50 * 5, (player) -> {
+                return ModuleUtils.replaceAllPlayerBungee(player.getUniqueId().toString(), fin);
+            });
         });
     }
 

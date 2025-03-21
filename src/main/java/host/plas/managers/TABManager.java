@@ -1,7 +1,6 @@
 package host.plas.managers;
 
 import host.plas.TABSL;
-import host.plas.configs.TabConfig;
 import me.neznamy.tab.api.TabAPI;
 import me.neznamy.tab.api.TabPlayer;
 import me.neznamy.tab.api.event.EventBus;

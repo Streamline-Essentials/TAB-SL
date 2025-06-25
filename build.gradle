@@ -20,7 +20,7 @@ dependencies {
     compileOnly 'net.luckperms:api:5.4'
 
     // TAB
-    compileOnly 'com.github.NEZNAMY:TAB-API:5.0.7'
+    compileOnly 'com.github.NEZNAMY:TAB-API:5.2.2'
 
     // StreamlineCore
     boolean includeBapi = rootProject.properties['include-bapi'].toString().toBoolean()
